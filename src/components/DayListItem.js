@@ -5,9 +5,9 @@ import classnames from "classnames";
 
 export default function DayListItem(props) {
   
-  let dayClass = classnames("DayListItem", {
+  let dayClass = classnames("day-list__item", {
     "day-list__item--selected": props.selected,
-    "day-list__item--full":  !(props.spots) 
+    "day-list__item--full": !(props.spots), 
   });
   return (
     <li className={dayClass} onClick={() => props.setDay(props.name)}>
